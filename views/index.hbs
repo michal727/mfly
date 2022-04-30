@@ -1,0 +1,250 @@
+<html lang='pl'>
+
+<head>
+	<meta charset='UTF-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='shortcut icon' href='#' />
+	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+		integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous' />
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+		integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
+		crossorigin='anonymous'></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' />
+	<title> {{pageTitle}} </title>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.01.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+	<link type='text/css' rel='stylesheet' href='/css/style.css' />
+</head>
+
+<oo>
+	<header>
+		{{> top_navbar}}
+		<div class="container-fluid searcher-bg">
+			<div class='container'>
+				<div class='search-bar'>
+					<h5 class='card-title'>Wyszukaj najlepsze loty z Polski do europejskich miast:</h5>
+					<div class='row gx-2 pt-4'>
+						<!-- DEPARTURE  -->
+						<div class='col-md-3'>
+							<label for='departure' class='form-label'>Wylot</label>
+							<div class='input-group'>
+								<span class='input-group-text'> <i class="ti ti-plane-departure"></i></span>
+								<select class="form-control" id="departure">
+									<option value="0" disabled selected>...</option>
+									<option>Katowice</option>
+									<option>Kraków</option>
+									<option>Poznań</option>
+									<option>Warszawa</option>
+									<option>Wrocław</option>
+								</select>
+							</div>
+							<div class="error" id="departure-error"></div>
+						</div>
+						<!-- ARRIVAL  -->
+						<div class='col-md-3'>
+							<label for='arrival' class='form-label'>Przylot</label>
+							<div class='input-group'>
+								<span class='input-group-text'> <i class="ti ti-plane-arrival"></i></span>
+								<select class="form-control" id="arrival">
+									<option value="0" disabled selected>...</option>
+								</select>
+
+							</div>
+							<div class="error" id="arrival-error"></div>
+							<!-- <div class="kato-routes"></div> -->
+						</div>
+						<!-- DEPARTURE DATE -->
+						<div class='col-md-2'>
+							<label for='departure-date' class='form-label'>Data wylotu</label>
+							<div class='input-group autocomplete'>
+								<span class='input-group-text'><i class="ti ti-calendar"></i></span>
+								<input type='date' class='form-control' id='departure-date' min="2022-01-20"
+									max="2024-12-30" value="2022-05-02" />
+							</div>
+							<div class="error" id="date-error"></div>
+						</div>
+						<!-- RETURN DATE  -->
+						<div class='col-md-2'>
+							<!-- <label for='return-date' class='form-label'>Data powrotu</label>
+										<div class='input-group'>
+											<span class='input-group-text'><i class='bi-calendar'></i></span>
+											<input type='date' class='form-control' id='return-date' />
+										</div>  -->
+						</div>
+						<!-- PASSENGERS  -->
+						<div class='col-6 col-md-1'>
+
+							<div class="form-group">
+								<label for='passengers' class='form-label'> Pasażerowie</label>
+								<select class="form-control" id="passengers">
+									<option selected>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+
+						</div>
+						<div class='col-6 col-md-1'>
+							<label for='search-button' class='form-label'> Wyszukaj</label>
+							<button id='search-button' class='btn btn-warning width100'>
+								<i class="bi bi-search"></i>
+							</button>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="search-results"> </div>
+			<div class="loading">
+				<div class="spinner-border text-warning"></div>
+			</div>
+			<div class="best-offers mt-5">
+				<div class="row"></div>
+				<h3 class="text-center"> Najpopularniejsze połączenia</h3>
+				<div class="row mt-4 pt-2">
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/ateny.png" class="card-img-top" alt="..."
+								onclick="specialOffer('Katowice', 'Ateny')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Katowice<span> <i class="ti ti-plane"></i> </span>Ateny </h5>
+								</div>
+								<div class="offer-price">
+									79 zł
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/cypr.jpg" class="card-img-top" alt="..."
+								onclick="specialOffer('Katowice', 'Pafos')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Katowice<span> <i class="ti ti-plane"></i> </span>Cypr </h5>
+								</div>
+								<div class="offer-price">
+									179 zł
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/malta.jpg" class="card-img-top" alt="..."
+								onclick="specialOffer('Kraków', 'Malta')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Kraków<span> <i class="ti ti-plane"></i> </span>Malta </h5>
+								</div>
+								<div class="offer-price">
+									159 zł
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/palma.jpg" class="card-img-top" alt="..."
+								onclick="specialOffer('Kraków', 'Palma')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Kraków<span> <i class="ti ti-plane"></i> </span>Palma </h5>
+								</div>
+								<div class="offer-price">
+									229 zł
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/sztokholm.png" class="card-img-top" alt="..."
+								onclick="specialOffer('Wrocław', 'Sztokholm')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Wrocław<span> <i class="ti ti-plane"></i> </span>Sztokholm </h5>
+								</div>
+								<div class="offer-price">
+									49 zł
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="./../images/korfu.png" class="card-img-top" alt="..."
+								onclick="specialOffer('Wrocław', 'Korfu')">
+							<div class="offer card-body  d-flex justify-content-between">
+								<div class="offer-title">
+									<h5>Wrocław<span> <i class="ti ti-plane"></i> </span>Korfu </h5>
+								</div>
+								<div class="offer-price">
+									99 zł
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card flex align-items-center justify-content-center">
+							<img class="card-img-top weather-icon" src="" alt="">
+							<div class="card-body align-items-center justify-content-center pt-0">
+
+								<div class="weather-info">
+									<p class="weather"></p>
+									<p class="temperature"></p>
+									<p class="humidity"></p>
+								</div>
+
+								<h3 class="city-name pb-4"></h3>
+
+								<div class="input-group pb-4">
+									<input type="text" class="form-control" id="weather-input"
+										placeholder="Wpisz nazwę miasta...">
+
+									<div class="input-group-append">
+										<button class="btn btn-warning w-button" id="weather-btn"><i
+												class="bi bi-search"></i></button>
+									</div>
+								</div>
+								<p class="warning"></p>
+
+
+
+							</div>
+
+							<div>
+								<div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+	<footer>
+		{{> footer}}
+	</footer>
+	<script src='./../js/search-engine.js'></script>
+	<script src='./../js/weather.js'></script>
+
+
+	</body>
+
+</html>

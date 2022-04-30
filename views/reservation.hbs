@@ -1,0 +1,492 @@
+<html lang='pl'>
+
+<head>
+	<meta charset='UTF-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='shortcut icon' href='#' />
+	<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+		integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous' />
+	<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+		integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
+		crossorigin='anonymous'></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css' />
+	<title> {{pageTitle}} </title>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.6/dist/css/autoComplete.01.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+	<link type='text/css' rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+	<header>
+		{{> top_navbar}}
+		<div class="container-fluid searcher-bg">
+			<div class='container'>
+
+				<div class='search-bar'>
+					<h5 class='card-title'>Wybrany lot:
+						<span class="departure"></span>
+						<span>—</span>
+						<span class="arrival"></span>
+					</h5>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h5 class='upper-title'>Wybrany lot:</h5>
+					<div class="card">
+						<img src="./../images/aiport.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<div class="row gx-2 search-results-item">
+								<div class='col-9 d-flex flex-column justify-content-around'>
+									<div class="route">
+										<div class='departure'>
+											<p>Miasto wylotu</p>
+										</div>
+										<div class='arrival'>Miasto przylotu</div>
+									</div>
+									<div class="date">data</div>
+								</div>
+								<div class='col-3 d-flex justify-content-end align-items-center'>
+									<div class='airline-logo'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h5 class='upper-title'>Wybierz miejsca:</h5>
+					<div class="card">
+						<div class="wings">
+							<div class="shape"></div>
+						</div>
+						<div class="card-body">
+
+							<p class="choose-seats">Pozostało <span class="seats-remaining-info"> 0</span>
+								miejsc do wybrania</p>
+							<div class="info-row align-items-center">
+								<div class="place seat"></div>
+								<div class="div">Dostępne</div>
+								<div class="place seat occupied"></div>
+								<div class="div">Niedostępne</div>
+							</div>
+
+							<div class="plane">
+								<div class="plane-row">
+									<div class="place">A</div>
+									<div class="place">B</div>
+									<div class="place">C</div>
+									<div class="place num"></div>
+									<div class="place">D</div>
+									<div class="place">E</div>
+									<div class="place">F</div>
+								</div>
+
+								<div class="plane-row">
+									<div class="place seat occupied" id="A1"></div>
+									<div class="place seat occupied" id="B1"></div>
+									<div class="place seat" id="C1"></div>
+									<div class="place num">1</div>
+									<div class="place seat" id="D1"></div>
+									<div class="place seat" id="E1"></div>
+									<div class="place seat" id="F1"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat" id="A2"></div>
+									<div class="place seat" id="B2"></div>
+									<div class="place seat" id="C3"></div>
+									<div class="place num">2</div>
+									<div class="place seat" id="D2"></div>
+									<div class="place seat" id="E2"></div>
+									<div class="place seat" id="F2"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat occupied" id="A3"></div>
+									<div class="place seat" id="B3"></div>
+									<div class="place seat" id="C3"></div>
+									<div class="place num">3</div>
+									<div class="place seat" id="D3"></div>
+									<div class="place seat occupied" id="E3"></div>
+									<div class="place seat occupied" id="F3"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat occupied" id="A4"></div>
+									<div class="place seat occupied" id="B4"></div>
+									<div class="place seat" id="C4"></div>
+									<div class="place num">4</div>
+									<div class="place seat" id="D4"></div>
+									<div class="place seat" id="E4"></div>
+									<div class="place seat" id="F4"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat occupied" id="A5"></div>
+									<div class="place seat occupied" id="B5"></div>
+									<div class="place seat" id="C5"></div>
+									<div class="place num">5</div>
+									<div class="place seat occupied" id="D5"></div>
+									<div class="place seat occupied" id="E5"></div>
+									<div class="place seat" id="F5"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A6"></div>
+									<div class="place seat" id="B6"></div>
+									<div class="place seat" id="C6"></div>
+									<div class="place num">6</div>
+									<div class="place seat occupied " id="D6"></div>
+									<div class="place seat occupied" id="E6"></div>
+									<div class="place seat occupied" id="F6"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat occupied" id="A7"></div>
+									<div class="place seat occupied" id="B7"></div>
+									<div class="place seat" id="C7"></div>
+									<div class="place num">7</div>
+									<div class="place seat" id="D7"></div>
+									<div class="place seat" id="E7"></div>
+									<div class="place seat" id="F7"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat occupied" id="A8"></div>
+									<div class="place seat" id="B8"></div>
+									<div class="place seat" id="C8"></div>
+									<div class="place num">8</div>
+									<div class="place seat" id="D8"></div>
+									<div class="place seat occupied" id="E8"></div>
+									<div class="place seat occupied" id="F8"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat occupied" id="A9"></div>
+									<div class="place seat occupied" id="B9"></div>
+									<div class="place seat occupied" id="C9"></div>
+									<div class="place num">9</div>
+									<div class="place seat" id="D9"></div>
+									<div class="place seat" id="E9"></div>
+									<div class="place seat occupied" id="F9"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat occupied" id="A10"></div>
+									<div class="place seat" id="B10"></div>
+									<div class="place seat" id="C10"></div>
+									<div class="place num">10</div>
+									<div class="place seat occupied" id="D10"></div>
+									<div class="place seat occupied" id="E10"></div>
+									<div class="place seat occupied" id="F10"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A11"></div>
+									<div class="place seat" id="B11"></div>
+									<div class="place seat" id="C11"></div>
+									<div class="place num">11</div>
+									<div class="place seat" id="D11"></div>
+									<div class="place seat occupied" id="E11"></div>
+									<div class="place seat occupied" id="F11"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A12"></div>
+									<div class="place seat" id="B12"></div>
+									<div class="place seat" id="C12"></div>
+									<div class="place num">12</div>
+									<div class="place seat" id="D12"></div>
+									<div class="place seat" id="E12"></div>
+									<div class="place seat" id="F12"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A13"></div>
+									<div class="place seat" id="B13"></div>
+									<div class="place seat" id="C13"></div>
+									<div class="place num">13</div>
+									<div class="place seat" id="D13"></div>
+									<div class="place seat" id="E13"></div>
+									<div class="place seat" id="F13"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A14"></div>
+									<div class="place seat" id="B14"></div>
+									<div class="place seat" id="C14"></div>
+									<div class="place num">14</div>
+									<div class="place seat" id="D14"></div>
+									<div class="place seat" id="E14"></div>
+									<div class="place seat" id="F14"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat occupied" id="A15"></div>
+									<div class="place seat occupied" id="B15"></div>
+									<div class="place seat" id="C15"></div>
+									<div class="place num">15</div>
+									<div class="place seat" id="D15"></div>
+									<div class="place seat" id="E15"></div>
+									<div class="place seat" id="F15"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A16"></div>
+									<div class="place seat" id="B16"></div>
+									<div class="place seat" id="C16"></div>
+									<div class="place num">16</div>
+									<div class="place seat" id="D16"></div>
+									<div class="place seat" id="E16"></div>
+									<div class="place seat" id="F16"></div>
+								</div>
+
+								<div class="plane-row mt-5">
+									<div class="place seat occupied" id="A17"></div>
+									<div class="place seat occupied" id="B17"></div>
+									<div class="place seat occupied" id="C17"></div>
+									<div class="place num">17</div>
+									<div class="place seat" id="D17"></div>
+									<div class="place seat occupied" id="E17"></div>
+									<div class="place seat occupied" id="F17"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A18"></div>
+									<div class="place seat" id="B18"></div>
+									<div class="place seat" id="C18"></div>
+									<div class="place num">18</div>
+									<div class="place seat" id="D18"></div>
+									<div class="place seat" id="E18"></div>
+									<div class="place seat" id="F18"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A19"></div>
+									<div class="place seat" id="B19"></div>
+									<div class="place seat" id="C19"></div>
+									<div class="place num">19</div>
+									<div class="place seat" id="D19"></div>
+									<div class="place seat" id="E19"></div>
+									<div class="place seat" id="F19"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A20"></div>
+									<div class="place seat" id="B20"></div>
+									<div class="place seat" id="C20"></div>
+									<div class="place num">20</div>
+									<div class="place seat" id="D20"></div>
+									<div class="place seat" id="E20"></div>
+									<div class="place seat occupied" id="F20"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A21"></div>
+									<div class="place seat" id="B21"></div>
+									<div class="place seat" id="C21"></div>
+									<div class="place num">21</div>
+									<div class="place seat" id="D4"></div>
+									<div class="place seat" id="E21"></div>
+									<div class="place seat" id="F21"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A22"></div>
+									<div class="place seat" id="B22"></div>
+									<div class="place seat" id="C22"></div>
+									<div class="place num">22</div>
+									<div class="place seat" id="D22"></div>
+									<div class="place seat" id="E22"></div>
+									<div class="place seat" id="F22"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A23"></div>
+									<div class="place seat" id="B23"></div>
+									<div class="place seat" id="C23"></div>
+									<div class="place num">23</div>
+									<div class="place seat" id="D23"></div>
+									<div class="place seat" id="E23"></div>
+									<div class="place seat" id="F23"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A24"></div>
+									<div class="place seat" id="B24"></div>
+									<div class="place seat" id="C24"></div>
+									<div class="place num">24</div>
+									<div class="place seat" id="D24"></div>
+									<div class="place seat" id="E24"></div>
+									<div class="place seat" id="F24"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A25"></div>
+									<div class="place seat" id="B25"></div>
+									<div class="place seat" id="C25"></div>
+									<div class="place num">25</div>
+									<div class="place seat" id="D25"></div>
+									<div class="place seat" id="E25"></div>
+									<div class="place seat" id="F25"></div>
+								</div>
+
+								<div class="plane-row mt-2">
+									<div class="place seat occupied" id="A26"></div>
+									<div class="place seat" id="B26"></div>
+									<div class="place seat" id="C26"></div>
+									<div class="place num">26</div>
+									<div class="place seat" id="D26"></div>
+									<div class="place seat" id="E26"></div>
+									<div class="place seat" id="F26"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A27"></div>
+									<div class="place seat" id="B27"></div>
+									<div class="place seat" id="C27"></div>
+									<div class="place num">27</div>
+									<div class="place seat" id="D27"></div>
+									<div class="place seat" id="E27"></div>
+									<div class="place seat" id="F27"></div>
+								</div>
+
+
+								<div class="plane-row mt-2">
+									<div class="place seat" id="A28"></div>
+									<div class="place seat" id="B28"></div>
+									<div class="place seat" id="C28"></div>
+									<div class="place num">28</div>
+									<div class="place seat" id="D28"></div>
+									<div class="place seat" id="E28"></div>
+									<div class="place seat" id="F28"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A29"></div>
+									<div class="place seat" id="294"></div>
+									<div class="place seat" id="C29"></div>
+									<div class="place num">29</div>
+									<div class="place seat" id="D29"></div>
+									<div class="place seat" id="E29"></div>
+									<div class="place seat" id="F29"></div>
+								</div>
+
+
+								<div class="plane-row mt-2">
+									<div class="place seat" id="A30"></div>
+									<div class="place seat" id="B30"></div>
+									<div class="place seat" id="C30"></div>
+									<div class="place num">30</div>
+									<div class="place seat" id="D30"></div>
+									<div class="place seat" id="E30"></div>
+									<div class="place seat" id="F30"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A31"></div>
+									<div class="place seat" id="B31"></div>
+									<div class="place seat" id="C31"></div>
+									<div class="place num">31</div>
+									<div class="place seat" id="D31"></div>
+									<div class="place seat" id="E31"></div>
+									<div class="place seat" id="F31"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A32"></div>
+									<div class="place seat" id="B32"></div>
+									<div class="place seat" id="C32"></div>
+									<div class="place num">32</div>
+									<div class="place seat" id="D32"></div>
+									<div class="place seat" id="E32"></div>
+									<div class="place seat" id="F32"></div>
+								</div>
+								<div class="plane-row">
+									<div class="place seat" id="A33"></div>
+									<div class="place seat" id="B33"></div>
+									<div class="place seat" id="C33"></div>
+									<div class="place num">33</div>
+									<div class="place seat" id="D33"></div>
+									<div class="place seat" id="E33"></div>
+									<div class="place seat" id="F33"></div>
+								</div>
+
+								<div class="plane-row">
+									<div class="place seat occupied" id="A35"></div>
+									<div class="place seat" id="B35"></div>
+									<div class="place seat" id="C35"></div>
+									<div class="place num">35</div>
+									<div class="place seat" id="D35"></div>
+									<div class="place seat occupied" id="E35"></div>
+									<div class="place seat occupied" id="F35"></div>
+								</div>
+
+								<div class="plane-row">
+									<div class="place"></div>
+									<div class="place"></div>
+									<div class="place"></div>
+									<div class="place"></div>
+									<div class="place"></div>
+									<div class="place"></div>
+									<div class="place"></div>
+								</div>
+
+
+								<div class="exit-right-top"><img src="/images/arrow-right.png" alt="exit right"></div>
+								<div class="exit-left-top"><img src="/images/arrow-left.png" alt="exit left"></div>
+								<div class="exit-right-middle"><img src="/images/arrow-right.png" alt="exit right">
+								</div>
+								<div class="exit-left-middle"><img src="/images/arrow-left.png" alt="exit left"></div>
+								<div class="exit-right-bottom"><img src="/images/arrow-right.png" alt="exit right">
+								</div>
+								<div class="exit-left-bottom"><img src="/images/arrow-left.png" alt="exit left"></div>
+							</div>
+						</div>
+					</div>
+					<h5 class='upper-title'>Wybierz bagaż:</h5>
+					<div class="card">
+						<div class="card-body">
+							<div class="baggages">
+								<!-- created dynamically in reservation.js -->
+
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<h5 class='upper-title'>Podsumowanie:</h5>
+					<div class="card side">
+						<div class="card-body">
+							<p class="seats-summary pb-2">
+								Wybrane miejsca:
+							<ul class="selected-seats-list pb-2"></ul>
+							</p>
+							<p class="baggage-summary pt-4">
+								Wybrany bagaż:
+							<ul class="selected-baggage-list pb-2"></ul>
+							</p>
+
+							<div class="final-summary d-flex justify-content-between">
+								<p class="total-price">
+									Cena: </p>
+								<div>
+									<span class="total-price-info"></span> <span>zł</span>
+								</div>
+							</div>
+							<div class="submit"> <input type="checkbox" name="terms" id="terms"> Zapoznałem się i
+								akceptuję regulamin usługi oraz
+								wyrażam zgodę na przetwarzanie danych osobowych.
+								<button type="submit" class="btn btn-secondary btn-lg final-btn" id="final-button"
+									onclick='submit()'> Rezerwuję</button>
+							</div>
+							<div class="res-error" id="seat-error"></div>
+							<div class="res-error" id="checkbox-error"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+				</div>
+			</div>
+	</main>
+	<footer>
+		{{> footer}}
+	</footer>
+
+	<script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
+	<script src='./../js/reservation.js'></script>
+	<script src='./../js/search-engine.js'></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,875 @@
+[
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "Ryanair",
+		"price": 129,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Dublin (DUB)",
+		"airline": "Ryanair",
+		"price": 229,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Pafos (PFO)",
+		"airline": "Ryanair",
+		"price": 119,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Korfu (CFU)",
+		"airline": "Ryanair",
+		"price": 129,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Malta (MLA)",
+		"airline": "Ryanair",
+		"price": 129,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "WizzAir",
+		"price": 139,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Dublin (DUB)",
+		"airline": "WizzAir",
+		"price": 219,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Pafos (PFO)",
+		"airline": "WizzAir",
+		"price": 159,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Korfu (CFU)",
+		"airline": "WizzAir",
+		"price": 119,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "LOT",
+		"price": 339,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Kolonia (CGN)",
+		"airline": "LOT",
+		"price": 199,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Pafos (PFO)",
+		"airline": "LOT",
+		"price": 559,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Malta (MLA)",
+		"airline": "LOT",
+		"price": 829,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "Ryanair",
+		"price": 159,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "Ryanair",
+		"price": 199,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Berlin (BER)",
+		"airline": "Ryanair",
+		"price": 59,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Londyn (LHR)",
+		"airline": "Ryanair",
+		"price": 79,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Malta (MLA)",
+		"airline": "WizzAir",
+		"price": 199,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "WizzAir",
+		"price": 91,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Londyn (LHR)",
+		"airline": "WizzAir",
+		"price": 89,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "LOT",
+		"price": 399,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Berlin (BER)",
+		"airline": "LOT",
+		"price": 259,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Palma (PMI)",
+		"airline": "Ryanair",
+		"price": 219,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Rzym (CIA)",
+		"airline": "Ryanair",
+		"price": 89,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "Ryanair",
+		"price": 49,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Paryż (BVA)",
+		"airline": "Ryanair",
+		"price": 131,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Palma (PMI)",
+		"airline": "WizzAir",
+		"price": 239,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "WizzAir",
+		"price": 169,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "WizzAir",
+		"price": 51,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Palma (PMI)",
+		"airline": "LOT",
+		"price": 431,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 1469,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "LOT",
+		"price": 231,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Paryż (BVA)",
+		"airline": "LOT",
+		"price": 321,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Neapol (NAP)",
+		"airline": "Ryanair",
+		"price": 99,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "Ryanair",
+		"price": 155,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Londyn (LHR)",
+		"airline": "Ryanair",
+		"price": 115,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Paryż (CDG)",
+		"airline": "Ryanair",
+		"price": 214,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "WizzAir",
+		"price": 161,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Paryż (CDG)",
+		"airline": "WizzAir",
+		"price": 224,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Neapol (NAP)",
+		"airline": "LOT",
+		"price": 522,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "LOT",
+		"price": 325,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Londyn (LHR)",
+		"airline": "LOT",
+		"price": 212,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Paryż (CDG)",
+		"airline": "LOT",
+		"price": 424,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Korfu (CFU)",
+		"airline": "Ryanair",
+		"price": 119,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "Ryanair",
+		"price": 219,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Londyn (LHR)",
+		"airline": "Ryanair",
+		"price": 139,
+		"dep_time": "08:00",
+		"arr_time": "12:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Sztokholm (ARN)",
+		"airline": "WizzAir",
+		"price": 59,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "WizzAir",
+		"price": 99,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Paryż (CDG)",
+		"airline": "WizzAir",
+		"price": 139,
+		"dep_time": "09:00",
+		"arr_time": "13:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Sztokholm (ARN)",
+		"airline": "LOT",
+		"price": 459,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Korfu (CFU)",
+		"airline": "LOT",
+		"price": 349,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 299,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Londyn (LHR)",
+		"airline": "LOT",
+		"price": 319,
+		"dep_time": "10:00",
+		"arr_time": "14:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Dublin (DUB)",
+		"airline": "Ryanair",
+		"price": 229,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Kolonia (CGN)",
+		"airline": "Ryanair",
+		"price": 59,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Pafos (PFO)",
+		"airline": "Ryanair",
+		"price": 119,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Malta (MLA)",
+		"airline": "Ryanair",
+		"price": 129,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "WizzAir",
+		"price": 139,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Dublin (DUB)",
+		"airline": "WizzAir",
+		"price": 219,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Kolonia (CGN)",
+		"airline": "WizzAir",
+		"price": 69,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Korfu (CFU)",
+		"airline": "WizzAir",
+		"price": 119,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Malta (MLA)",
+		"airline": "WizzAir",
+		"price": 129,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Ateny (ATH)",
+		"airline": "LOT",
+		"price": 339,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Kolonia (CGN)",
+		"airline": "LOT",
+		"price": 199,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Pafos (PFO)",
+		"airline": "LOT",
+		"price": 559,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Katowice (KTW)",
+		"arrival": "Korfu (CFU)",
+		"airline": "LOT",
+		"price": 719,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "Ryanair",
+		"price": 159,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Malta (MLA)",
+		"airline": "Ryanair",
+		"price": 179,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "Ryanair",
+		"price": 199,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Berlin (BER)",
+		"airline": "Ryanair",
+		"price": 59,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "WizzAir",
+		"price": 129,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Malta (MLA)",
+		"airline": "WizzAir",
+		"price": 199,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "WizzAir",
+		"price": 91,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Londyn (LHR)",
+		"airline": "WizzAir",
+		"price": 89,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 459,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Palma (PMI)",
+		"airline": "LOT",
+		"price": 399,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Kraków (KRK)",
+		"arrival": "Berlin (BER)",
+		"airline": "LOT",
+		"price": 259,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Palma (PMI)",
+		"airline": "Ryanair",
+		"price": 219,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Rzym (CIA)",
+		"airline": "Ryanair",
+		"price": 89,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "Ryanair",
+		"price": 149,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "Ryanair",
+		"price": 49,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Paryż (BVA)",
+		"airline": "Ryanair",
+		"price": 131,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Rzym (CIA)",
+		"airline": "WizzAir",
+		"price": 80,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "WizzAir",
+		"price": 51,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Paryż (BVA)",
+		"airline": "WizzAir",
+		"price": 121,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 1469,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Londyn (STN)",
+		"airline": "LOT",
+		"price": 231,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Poznań (POZ)",
+		"arrival": "Paryż (BVA)",
+		"airline": "LOT",
+		"price": 321,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Neapol (NAP)",
+		"airline": "Ryanair",
+		"price": 99,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "Ryanair",
+		"price": 125,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Paryż (CDG)",
+		"airline": "Ryanair",
+		"price": 214,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Neapol (NAP)",
+		"airline": "WizzAir",
+		"price": 122,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Londyn (LHR)",
+		"airline": "WizzAir",
+		"price": 142,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Paryż (CDG)",
+		"airline": "WizzAir",
+		"price": 224,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Neapol (NAP)",
+		"airline": "LOT",
+		"price": 522,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 541,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Warszawa (WAW)",
+		"arrival": "Londyn (LHR)",
+		"airline": "LOT",
+		"price": 212,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Sztokholm (ARN)",
+		"airline": "Ryanair",
+		"price": 79,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Korfu (CFU)",
+		"airline": "Ryanair",
+		"price": 119,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Paryż (CDG)",
+		"airline": "Ryanair",
+		"price": 119,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Londyn (LHR)",
+		"airline": "Ryanair",
+		"price": 139,
+		"dep_time": "11:00",
+		"arr_time": "15:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Sztokholm (ARN)",
+		"airline": "WizzAir",
+		"price": 59,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "WizzAir",
+		"price": 99,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Paryż (CDG)",
+		"airline": "WizzAir",
+		"price": 139,
+		"dep_time": "12:00",
+		"arr_time": "16:00"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Sztokholm (ARN)",
+		"airline": "LOT",
+		"price": 459,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Barcelona (BCN)",
+		"airline": "LOT",
+		"price": 299,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	},
+	{
+		"departure": "Wrocław (WRO)",
+		"arrival": "Paryż (CDG)",
+		"airline": "LOT",
+		"price": 439,
+		"dep_time": "16:00",
+		"arr_time": "19:40"
+	}
+]
