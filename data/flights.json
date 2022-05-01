@@ -3,7 +3,7 @@
 		"departure": "Katowice (KTW)",
 		"arrival": "Ateny (ATH)",
 		"airline": "Ryanair",
-		"price": 129,
+		"price": 79,
 		"dep_time": "08:00",
 		"arr_time": "12:00"
 	},
@@ -19,7 +19,7 @@
 		"departure": "Katowice (KTW)",
 		"arrival": "Pafos (PFO)",
 		"airline": "Ryanair",
-		"price": 119,
+		"price": 179,
 		"dep_time": "08:00",
 		"arr_time": "12:00"
 	},
@@ -35,7 +35,7 @@
 		"departure": "Katowice (KTW)",
 		"arrival": "Malta (MLA)",
 		"airline": "Ryanair",
-		"price": 129,
+		"price": 159,
 		"dep_time": "08:00",
 		"arr_time": "12:00"
 	},
@@ -118,7 +118,7 @@
 		"departure": "Kraków (KRK)",
 		"arrival": "Palma (PMI)",
 		"airline": "Ryanair",
-		"price": 199,
+		"price": 229,
 		"dep_time": "08:00",
 		"arr_time": "12:00"
 	},
@@ -378,7 +378,7 @@
 		"departure": "Wrocław (WRO)",
 		"arrival": "Sztokholm (ARN)",
 		"airline": "WizzAir",
-		"price": 59,
+		"price": 49,
 		"dep_time": "09:00",
 		"arr_time": "13:00"
 	},
@@ -492,7 +492,7 @@
 		"departure": "Katowice (KTW)",
 		"arrival": "Korfu (CFU)",
 		"airline": "WizzAir",
-		"price": 119,
+		"price": 99,
 		"dep_time": "12:00",
 		"arr_time": "16:00"
 	},
@@ -801,7 +801,7 @@
 		"departure": "Wrocław (WRO)",
 		"arrival": "Korfu (CFU)",
 		"airline": "Ryanair",
-		"price": 119,
+		"price": 99,
 		"dep_time": "11:00",
 		"arr_time": "15:00"
 	},
