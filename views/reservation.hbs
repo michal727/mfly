@@ -469,22 +469,60 @@
 							</div>
 							<div class="res-error" id="seat-error"></div>
 							<div class="res-error" id="checkbox-error"></div>
+
+
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-8">
+			<div class="popup-container">
+
+				<div class="backdrop"></div>
+				<div class="popup" id="popup">
+					<div class="card p-4 ">
+
+						<div class="popup-top-bar">
+							<button class="btn-close" id="btn-close"></button>
+						</div>
+
+						<div id="step-one" class="text-center">
+							<div class="card-body text-center">
+								<h3 class="mb-2">Zaloguj się</h3>
+							</div>
+							<div class="form-outline mb-2">
+								<input type="email" id="username" class="form-control form-control-lg" />
+								<label class="form-label" for="userName">Login</label>
+							</div>
+							<div class="form-outline mb-2">
+								<input type="password" id="userpassword" class="form-control form-control-lg" />
+								<label class="form-label" for="userpassword">Hasło</label>
+							</div>
+							<div class="res-error mb-2" id="login-error"></div>
+							<button class="btn btn-primary btn-lg btn-block" id="loginbutton" type="submit"
+								onclick="getLoginData()">Login</button>
+						</div>
+
+						<div id="step-two">
+							<div class="card-body text-center">
+								<h3 class="mb-5">Pomyślnie zalogowano</h3>
+								<div><i class="ti ti-circle-check"></i></div>
+							</div>
+						</div>
+
+
+					</div>
 				</div>
+
 			</div>
+		</div>
 	</main>
 	<footer>
 		{{> footer}}
 	</footer>
 
-	<script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
 	<script src='./../js/reservation.js'></script>
-	<script src='./../js/search-engine.js'></script>
+	<script src='./../js/login.js'></script>
+
 
 
 </body>

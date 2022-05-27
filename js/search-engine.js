@@ -16,7 +16,6 @@ getFlights();
 const departure = document.querySelector('#departure');
 const arrival = document.querySelector('#arrival');
 const departureDate = document.getElementById('departure-date');
-
 const weatherInput = document.querySelector('#weather-input');
 
 //show and hide arrival options, depending on selected departure city

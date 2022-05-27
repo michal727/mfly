@@ -176,11 +176,33 @@ const validateCheckbox = () => {
 
 //
 
-// activate final button
+// activate final button  - function submit() is assigned in html
 const finalButton = document.querySelector('#final-button');
 
 async function submit() {
 	await validateSeats();
 	await validateCheckbox();
-	console.log('test passed');
+	openPopup();
 }
+
+// popup
+
+const editBtn = document.querySelector('#btn-edit');
+const closeBtn = document.querySelector('#btn-close');
+const popup = document.querySelector('#popup');
+const backdrop = document.querySelector('.backdrop');
+
+const openPopup = () => {
+	popup.style.display = 'block';
+	backdrop.style.display = 'block';
+};
+
+closeBtn.addEventListener('click', () => {
+	popup.style.display = 'none';
+	backdrop.style.display = 'none';
+});
+
+backdrop.addEventListener('click', () => {
+	popup.style.display = 'none';
+	backdrop.style.display = 'none';
+});

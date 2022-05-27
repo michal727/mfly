@@ -522,6 +522,56 @@ option p {
 .temperature {
 	font-size: 64px;
 }
+
+.date-time .ti {
+	font-size: 1.5rem;
+}
+
+.date-time .ti {
+	font-size: 1.4rem;
+}
+
+/* popup */
+
+.popup-container {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	z-index: 200;
+	top: 0%;
+	width: 100%;
+}
+.backdrop {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+.popup-top-bar {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#step-two {
+	display: none;
+}
+
+.ti-circle-check {
+	font-size: 40px;
+	color: green;
+}
+
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px;
@@ -548,5 +598,15 @@ option p {
 	.route-col {
 		align-items: flex-start;
 		text-align: left;
+	}
+}
+
+@media (min-width: 768px) {
+	.popup {
+		top: 50%;
+		width: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+		max-width: 500px;
 	}
 }

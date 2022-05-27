@@ -6,6 +6,12 @@ const icon = document.querySelector('.weather-icon');
 const weather = document.querySelector('.weather');
 const temperature = document.querySelector('.temperature');
 
+const today = new Date();
+var date = today.getDate() + '.' + (today.getMonth() + 1) + '.' + today.getFullYear();
+var time = today.getHours() + ':' + today.getMinutes();
+
+// weather
+
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
 const API_KEY = '&appid=0970fdd455a2a578a1bab591a8af05df';
 const API_UNITS = '&units=metric';
@@ -50,5 +56,13 @@ const getWeather = () => {
 };
 
 button.addEventListener('click', getWeather);
-
 window.addEventListener('load', getWeather);
+
+// Time
+
+const getTime = () => {
+	document.querySelector('.current-date').innerHTML = date;
+	document.querySelector('.current-time').innerHTML = time;
+};
+
+window.addEventListener('load', getTime);
